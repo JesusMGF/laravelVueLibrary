@@ -5,7 +5,6 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="form-group">
-
                             <input v-if="editMode" type="text" class="form-control" v-model="item.name">
                             <p v-else>{{ item.name }}</p>
                             <input v-if="editMode" type="text" class="form-control" v-model="item.description">

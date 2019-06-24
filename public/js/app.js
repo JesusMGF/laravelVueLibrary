@@ -1749,7 +1749,6 @@ __webpack_require__.r(__webpack_exports__);
     newBook: function newBook() {
       var _this2 = this;
 
-      console.log(this.cat);
       var params = {
         name: this.title,
         description: this.description,
@@ -1807,9 +1806,7 @@ __webpack_require__.r(__webpack_exports__);
       title: ''
     };
   },
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  },
+  mounted: function mounted() {},
   methods: {
     newCategory: function newCategory() {
       var _this = this;
@@ -1895,7 +1892,6 @@ __webpack_require__.r(__webpack_exports__);
     newBook: function newBook() {
       var _this2 = this;
 
-      console.log(this.cat);
       var params = {
         name: this.title,
         description: this.description,
@@ -1960,9 +1956,7 @@ __webpack_require__.r(__webpack_exports__);
       }
     };
   },
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  },
+  mounted: function mounted() {},
   methods: {
     newCategory: function newCategory() {
       var _this = this;
@@ -1989,7 +1983,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -2156,7 +2149,6 @@ __webpack_require__.r(__webpack_exports__);
       this.displayList = true;
       this.display = false;
       this.displayCategory = false;
-      console.log(this.config);
 
       if (event.target.value === '') {
         this.displayList = false;
@@ -2242,9 +2234,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Login mounted');
-  },
+  mounted: function mounted() {},
   methods: {
     login: function login() {
       var params = {
@@ -2289,9 +2279,7 @@ __webpack_require__.r(__webpack_exports__);
       token: document.cookie.match("(^|;) ?Token=([^;]*)(;|$)")[2]
     };
   },
-  mounted: function mounted() {
-    console.log(this.token);
-  },
+  mounted: function mounted() {},
   methods: {
     logout: function logout() {
       document.cookie = 'Token=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
@@ -38461,7 +38449,7 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-8" }, [
-        _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card no-border" }, [
           _c("div", { staticClass: "card-body" }, [
             _c(
               "select",
@@ -38557,7 +38545,7 @@ var render = function() {
             "div",
             [
               _vm._l(_vm.items, function(item) {
-                return _c("listbook-component", {
+                return _c("listbookapi-component", {
                   directives: [
                     {
                       name: "show",
@@ -38573,11 +38561,13 @@ var render = function() {
               }),
               _vm._v(" "),
               _vm.display
-                ? _c("addbook-component", { on: { newBook: _vm.refreshBook } })
+                ? _c("addbookapi-component", {
+                    on: { newBook: _vm.refreshBook }
+                  })
                 : _vm._e(),
               _vm._v(" "),
               _vm.displayCategory
-                ? _c("addcategories-component", {
+                ? _c("addcategoriesapi-component", {
                     on: { newCategory: _vm.refreshCategory }
                   })
                 : _vm._e()
@@ -52039,15 +52029,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/main.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/main.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!****************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/main.scss ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/jesusmanuelgutierrezfernandez/Desktop/Projects/toomba/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/jesusmanuelgutierrezfernandez/Desktop/Projects/toomba/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/jesusmanuelgutierrezfernandez/Desktop/Projects/toomba/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/jesusmanuelgutierrezfernandez/Desktop/Projects/toomba/resources/sass/main.scss */"./resources/sass/main.scss");
 
 
 /***/ })

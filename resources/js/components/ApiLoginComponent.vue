@@ -30,7 +30,6 @@
 
 
         mounted() {
-            console.log('Login mounted');
         },
 
         methods: {

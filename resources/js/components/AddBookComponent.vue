@@ -47,7 +47,6 @@
         },
         methods: {
             newBook(){
-                console.log(this.cat)
                 const params = {
                     name : this.title,
                     description : this.description,

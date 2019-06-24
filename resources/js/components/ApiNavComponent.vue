@@ -14,7 +14,6 @@
             }
         },
         mounted() {
-            console.log(this.token);
         },
 
         methods: {

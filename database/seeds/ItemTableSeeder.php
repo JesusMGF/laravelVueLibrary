@@ -15,16 +15,27 @@ class ItemTableSeeder extends Seeder
         Item::truncate();
 
         $item = new Item();
-        $item->name = 'Regreso al futuro';
-        $item->description = 'Va de regresar del futuro';
+        $item->name = 'Spider-man';
+        $item->description = 'Spider-man';
         $item->categorie_id = 1;
         $item->save();
 
         $item = new Item();
-        $item->name = 'Regreso al futuro II';
-        $item->description = 'Va de regresar del futuro otra vez';
+        $item->name = 'Die Hard';
+        $item->description = 'Die Hard';
         $item->categorie_id = 1;
         $item->save();
 
+        $item = new Item();
+        $item->name = 'Home Alone';
+        $item->description = 'Home Alone';
+        $item->categorie_id = 4;
+        $item->save();
+
+        $item = new Item();
+        $item->name = 'There’s something about Mary';
+        $item->description = 'There’s something about Mary';
+        $item->categorie_id = 4;
+        $item->save();
     }
 }

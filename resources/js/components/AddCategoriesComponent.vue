@@ -33,7 +33,6 @@
             }
         },
         mounted() {
-            console.log('Component mounted.')
         },
         methods: {
             newCategory(){

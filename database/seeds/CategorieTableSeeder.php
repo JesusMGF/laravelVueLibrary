@@ -12,8 +12,27 @@ class CategorieTableSeeder extends Seeder
      */
     public function run()
     {
+
+        Categorie::truncate();
+
         $categorie = new Categorie();
-        $categorie->name = 'Ficcion';
+        $categorie->name = 'Adventure';
+        $categorie->save();
+
+        $categorie = new Categorie();
+        $categorie->name = 'Sci-Fi';
+        $categorie->save();
+
+        $categorie = new Categorie();
+        $categorie->name = 'Drama';
+        $categorie->save();
+
+        $categorie = new Categorie();
+        $categorie->name = 'Comedy';
+        $categorie->save();
+
+        $categorie = new Categorie();
+        $categorie->name = 'Thriller';
         $categorie->save();
     }
 }

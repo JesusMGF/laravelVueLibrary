@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card no-border">
                     <div class="card-body">
                         <select class="form-group" v-model="selectedCat" @change="setCategorie($event)" >
                             <option value=""></option>
@@ -20,23 +20,23 @@
 
                     <div>
 
-                        <listbook-component
+                        <listbookapi-component
                                 v-show="displayList"
                                 v-for="item in items"
                                 :key="item.id"
                                 :item="item"
                                 @update="refreshBook"
                                 @delete="refreshCategory"
-                        ></listbook-component>
+                        ></listbookapi-component>
 
-                        <addbook-component 
+                        <addbookapi-component 
                             v-if="display"
                             @newBook="refreshBook"
-                        ></addbook-component>
-                        <addcategories-component 
+                        ></addbookapi-component>
+                        <addcategoriesapi-component 
                             v-if="displayCategory"
                             @newCategory="refreshCategory"
-                        ></addcategories-component>
+                        ></addcategoriesapi-component>
 
                     </div>
                 </div>
@@ -71,7 +71,6 @@
                 this.displayList = true;
                 this.display = false;
                 this.displayCategory = false;
-                console.log(this.config)
                 if (event.target.value === ''){
                     this.displayList = false;
                     this.display = false;
