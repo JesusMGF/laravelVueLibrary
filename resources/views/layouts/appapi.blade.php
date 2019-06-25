@@ -22,8 +22,6 @@
 </head>
 <body>
     <div id="app">
-        <apinav-component></apinav-component>
-        
         <main class="py-4">
             @yield('content')
         </main>

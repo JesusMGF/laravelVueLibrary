@@ -37,6 +37,7 @@
             return{
                 categories : [],
                 title : '',
+                cat : 0,
                 description : '',
                 config : { headers: {'Content-Type' : 'application/json', 'Authorization' : 'Bearer '+document.cookie.match("(^|;) ?Token=([^;]*)(;|$)")[2]}, withCredentials: true}
             }

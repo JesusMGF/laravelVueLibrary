@@ -13,8 +13,6 @@ class CategorieTableSeeder extends Seeder
     public function run()
     {
 
-        Categorie::truncate();
-
         $categorie = new Categorie();
         $categorie->name = 'Adventure';
         $categorie->save();
